@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"bufio" //入力用
+	"fmt"   //出力用
+	"os"    //入力用
+)
+
+var scanner = bufio.NewScanner(os.Stdin)
 
 func main() {
-    fmt.Printf("hello, world\n")
+	var S string
+	if scanner.Scan() {
+		S = scanner.Text()
+	}
+	fmt.Println(S)
 }
