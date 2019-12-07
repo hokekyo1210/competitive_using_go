@@ -13,6 +13,8 @@ type Edge struct {
 
 var color []int
 var edge [][]Edge
+
+//K from ABC146
 var K int
 
 func main() {
